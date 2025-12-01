@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0b" />
+    <title>IPPUDO</title>
+    <meta
+      name="description"
+      content="Ramen restaurant landing page (inspired layout): hero, about, featured menu, reservation, features, testimonial, combos, hours, banner, contact, footer."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <!-- LOGO SLOT -->
+        <a class="brand" href="#" aria-label="Home">
+          <img
+            class="brand__logo"
+            src="./images/logo2-remove.png"
+            alt="Your brand logo"
+          />
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="#">Home</a>
+          <a class="nav__link" href="#menu">Menu</a>
+          <a class="nav__link" href="#services">Services</a>
+          <a class="nav__link" href="#reservation">Reservation</a>
+          <a class="nav__link" href="#contact">Contact us</a>
+        </nav>
+
+        <div class="header__actions">
+          <a class="icon-btn" href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M14 9h3V6h-3a4 4 0 0 0-4 4v3H7v3h3v5h3v-5h3l1-3h-4v-3a1 1 0 0 1 1-1Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+
+          <a class="icon-btn" href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M17.5 6.5h.01"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+
+          <a class="icon-btn" href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M21 7.2c-.7.3-1.4.5-2.2.6.8-.5 1.3-1.2 1.6-2.1-.7.4-1.5.8-2.4.9A3.6 3.6 0 0 0 12 9.9c0 .3 0 .5.1.8-3-.2-5.6-1.7-7.3-4.1-.3.6-.5 1.2-.5 1.9 0 1.3.7 2.5 1.7 3.2-.6 0-1.2-.2-1.7-.5v.1c0 1.9 1.4 3.4 3.2 3.8-.3.1-.7.1-1.1.1-.3 0-.5 0-.7-.1.5 1.6 2 2.7 3.7 2.7A7.3 7.3 0 0 1 3 18.6 10.3 10.3 0 0 0 8.6 20c6.7 0 10.4-5.7 10.4-10.7v-.5c.7-.5 1.3-1 1.8-1.6Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+
+          <button
+            class="hamburger"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+          >
+            <span aria-hidden="true"></span><span aria-hidden="true"></span
+            ><span aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile drawer -->
+      <div class="mobile-nav" id="mobileNav" hidden>
+        <div
+          class="container mobile-nav__inner"
+          role="navigation"
+          aria-label="Mobile"
+        >
+          <a class="mobile-nav__link" href="#top">Home</a>
+          <a class="mobile-nav__link" href="#menu">Menu</a>
+          <a class="mobile-nav__link" href="#services">Services</a>
+          <a class="mobile-nav__link" href="#reservation">Reservation</a>
+          <a class="mobile-nav__link" href="#contact">Contact us</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" aria-label="Hero">
+        <div class="container hero__inner">
+          <p class="hero__kicker">The taste that makes you smile</p>
+          <h1 class="hero__title">
+            Ramen IPPUDO Vietnam<br />
+            Japanese Restaurant
+          </h1>
+          <p class="hero__sub">
+            Join the excitement, feel the energy, and experience a warm
+            ambiance. We can’t wait to welcome you!
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#reservation"
+              >Make a reservation</a
+            >
+            <a class="btn btn--outline" href="#menu">View Menu</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <!-- About (match reference) -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="about about--ref">
+            <div class="about__text">
+              <p class="eyebrow">WHO WE ARE</p>
+
+              <h2 class="h2">
+                Ramen Ippudo Vietnam<br />
+                Japanese Restaurant
+              </h2>
+
+              <p class="muted about__p">
+                In 1985, Ippudo began as a humble ramen shop in Hakata, Japan,
+                with just ten counter seats. Led by Ramen King Shigemi Kawahara,
+                we set out to share the joy of Japanese ramen with the world.
+              </p>
+
+              <p class="muted about__p">
+                Today, we’ve expanded to over 200 stores across 16 countries
+                worldwide. Timeless flavors, heartfelt hospitality, and a
+                balance of tradition and innovation are at the heart of every
+                bowl we serve.
+              </p>
+
+              <a class="btn btn--primary btn--sm" href="#menu">Learn more</a>
+            </div>
+
+            <div
+              class="about__media about__media--two"
+              aria-label="About images"
+            >
+              <figure class="about-photo about-photo--a">
+                <img
+                  src="./images/pic3.jpg"
+                  alt="Chef preparing ramen"
+                  loading="lazy"
+                />
+              </figure>
+
+              <figure class="about-photo about-photo--b">
+                <img
+                  src="./nv_ippudo.jpg"
+                  alt="Serving ramen to customer"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Menu -->
+      <section class="section section--soft" id="menu">
+        <div class="container">
+          <div class="section-head section-head--center">
+            <h2 class="h2">Featured Menu</h2>
+            <p class="muted">
+              A curated selection — clean two-column menu list with subtle
+              dividers and red accents.
+            </p>
+          </div>
+
+          <div class="menu">
+            <div class="menu__col">
+              <div class="menu-item">
+                <span class="menu-item__name">Shoyu Ramen</span>
+                <span class="menu-item__dots" aria-hidden="true"></span>
+                <span class="menu-item__price">129K</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__name">Miso Ramen</span>
+                <span class="menu-item__dots" aria-hidden="true"></span>
+                <span class="menu-item__price">139K</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__name">Tonkotsu Ramen</span>
+                <span class="menu-item__dots" aria-hidden="true"></span>
+                <span class="menu-item__price">149K</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__name">Spicy Kara Miso</span>
+                <span class="menu-item__dots" aria-hidden="true"></span>
+                <span class="menu-item__price">159K</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__name">Ajitama Egg</span>
+                <span class="menu-item__dots" aria-hidden="true"></span>
+                <span class="menu-item__price">25K</span>
+              </div>
+            </div>
+
+            <div class="menu__col">
+              <div class="menu-item">
+                <span class="menu-item__name">Gyoza (6 pcs)</span>
+                <span class="menu-item__dots" aria-hidden="true"></span>
+                <span class="menu-item__price">69K</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__name">Karaage Chicken</span>
+                <span class="menu-item__dots" aria-hidden="true"></span>
+                <span class="menu-item__price">89K</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__name">Edamame</span>
+                <span class="menu-item__dots" aria-hidden="true"></span>
+                <span class="menu-item__price">45K</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__name">Matcha Tea</span>
+                <span class="menu-item__dots" aria-hidden="true"></span>
+                <span class="menu-item__price">39K</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__name">Yuzu Soda</span>
+                <span class="menu-item__dots" aria-hidden="true"></span>
+                <span class="menu-item__price">49K</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reservation -->
+      <section class="reserve-band" id="reservation" aria-label="Reservation">
+        <div class="container reserve-band__inner">
+          <div class="reserve-band__left">
+            <h2 class="h2 h2--white">Make your next meal memorable</h2>
+            <p class="muted muted--white">
+              Reserve a table in seconds. Clean form UI, grid layout, and subtle
+              shadows — ideal for your frontend portfolio.
+            </p>
+          </div>
+
+          <form class="reserve-form" id="reserveForm">
+            <h3 class="h3">Book a table</h3>
+
+            <div class="form-grid">
+              <label class="field">
+                <span class="field__label">Full name</span>
+                <input
+                  class="field__input"
+                  name="name"
+                  placeholder="Jane Doe"
+                  required
+                />
+              </label>
+
+              <label class="field">
+                <span class="field__label">Phone</span>
+                <input
+                  class="field__input"
+                  name="phone"
+                  inputmode="tel"
+                  placeholder="+84 90 000 0000"
+                  required
+                />
+              </label>
+
+              <label class="field">
+                <span class="field__label">Date</span>
+                <input class="field__input" type="date" name="date" required />
+              </label>
+
+              <label class="field">
+                <span class="field__label">Time</span>
+                <select class="field__input" name="time" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>11:00</option>
+                  <option>12:00</option>
+                  <option>13:00</option>
+                  <option>18:00</option>
+                  <option>19:00</option>
+                  <option>20:00</option>
+                  <option>21:00</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span class="field__label">Guests</span>
+                <select class="field__input" name="guests" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5+</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span class="field__label">Branch</span>
+                <select class="field__input" name="branch" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>District 1</option>
+                  <option>District 3</option>
+                  <option>Thu Duc</option>
+                </select>
+              </label>
+            </div>
+
+            <button
+              class="btn btn--primary btn--block reserve-btn"
+              type="submit"
+            >
+              <span class="reserve-btn__text">Make a reservation</span>
+            </button>
+
+            <p class="fineprint">
+              <!-- Demo only — connect to your backend / Google Form later. -->
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Features + Collage + Testimonial -->
+      <section class="section" aria-label="Features">
+        <div class="container">
+          <div class="feature-grid">
+            <div class="feature-grid__left">
+              <h2 class="h2">Making your great meal come true</h2>
+              <p class="muted">
+                Simple structure, strong hierarchy, and clean rhythm of
+                sections. Great for showcasing spacing and layout skills.
+              </p>
+
+              <ul class="checklist">
+                <li class="checklist__item">
+                  <span class="checklist__dot" aria-hidden="true"></span>
+                  Carefully balanced flavors, served consistently.
+                </li>
+                <li class="checklist__item">
+                  <span class="checklist__dot" aria-hidden="true"></span>
+                  A cozy ambiance designed for friends &amp; family.
+                </li>
+                <li class="checklist__item">
+                  <span class="checklist__dot" aria-hidden="true"></span>
+                  Fast reservation flow with clear states.
+                </li>
+              </ul>
+
+              <a class="btn btn--primary btn--sm" href="#reservation"
+                >Book now</a
+              >
+            </div>
+
+            <div class="feature-grid__right">
+              <div class="collage" aria-label="Image collage">
+                <img
+                  class="collage__a"
+                  src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1200&q=80"
+                  alt="Restaurant interior"
+                  loading="lazy"
+                />
+                <img
+                  class="collage__b"
+                  src="./images/pic1.jpg"
+                  alt="Chef preparing dish"
+                  loading="lazy"
+                />
+                <img
+                  class="collage__c"
+                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
+                  alt="Dining experience"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial" aria-label="Testimonial">
+            <p class="testimonial__quote">
+              “The broth is rich, the noodles are perfect, and the service is
+              incredibly warm. I’ll definitely come back.”
+            </p>
+            <div class="testimonial__who">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&q=70"
+                alt="Customer avatar"
+                loading="lazy"
+              />
+              <div>
+                <strong>Nguyen An</strong>
+                <span class="muted">Local guide</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Combos -->
+      <section class="section section--soft" aria-label="Special combos">
+        <div class="container">
+          <div class="section-head section-head--center" id="combo">
+            <h2 class="h2">Our Special Ramen Combo</h2>
+            <p class="muted">
+              Card-based combos with a consistent grid to mirror the concept
+              layout.
+            </p>
+          </div>
+
+          <div class="combo-grid">
+            <article class="combo-card">
+              <img
+                src="https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=900&q=70"
+                alt="Combo A"
+                loading="lazy"
+              />
+              <div class="combo-card__body">
+                <h3 class="h3 h3--sm">Combo A</h3>
+                <p class="muted">1 ramen + 1 drink</p>
+                <div class="combo-card__foot">
+                  <span class="price">179K</span>
+                  <a class="btn btn--ghost btn--xs" href="#reservation"
+                    >Reserve</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="combo-card">
+              <img
+                src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=900&q=70"
+                alt="Combo B"
+                loading="lazy"
+              />
+              <div class="combo-card__body">
+                <h3 class="h3 h3--sm">Combo B</h3>
+                <p class="muted">2 ramen + gyoza</p>
+                <div class="combo-card__foot">
+                  <span class="price">329K</span>
+                  <a class="btn btn--ghost btn--xs" href="#reservation"
+                    >Reserve</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="combo-card">
+              <img
+                src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?auto=format&fit=crop&w=900&q=70"
+                alt="Combo C"
+                loading="lazy"
+              />
+              <div class="combo-card__body">
+                <h3 class="h3 h3--sm">Combo C</h3>
+                <p class="muted">2 ramen + 2 drinks</p>
+                <div class="combo-card__foot">
+                  <span class="price">359K</span>
+                  <a class="btn btn--ghost btn--xs" href="#reservation"
+                    >Reserve</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="combo-card">
+              <img
+                src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=900&q=70"
+                alt="Combo D"
+                loading="lazy"
+              />
+              <div class="combo-card__body">
+                <h3 class="h3 h3--sm">Combo D</h3>
+                <p class="muted">3 ramen + sides</p>
+                <div class="combo-card__foot">
+                  <span class="price">489K</span>
+                  <a class="btn btn--ghost btn--xs" href="#reservation"
+                    >Reserve</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="combo-card">
+              <img
+                src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=900&q=70"
+                alt="Combo E"
+                loading="lazy"
+              />
+              <div class="combo-card__body">
+                <h3 class="h3 h3--sm">Combo E</h3>
+                <p class="muted">Team bundle</p>
+                <div class="combo-card__foot">
+                  <span class="price">599K</span>
+                  <a class="btn btn--ghost btn--xs" href="#reservation"
+                    >Reserve</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="center">
+            <a class="btn btn--primary" href="#menu">View full menu</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Opening Hours -->
+      <section class="section" aria-label="Opening hours">
+        <div class="container">
+          <div class="hours">
+            <div class="hours__left">
+              <h2 class="h2">Opening Hours</h2>
+              <p class="muted">
+                Consistent block layout with subtle striping to match the
+                concept rhythm.
+              </p>
+
+              <div
+                class="hours__table"
+                role="table"
+                aria-label="Opening hours table"
+              >
+                <div class="hours__row" role="row">
+                  <span role="cell">Monday - Friday</span
+                  ><strong role="cell">11:00 - 22:00</strong>
+                </div>
+                <div class="hours__row" role="row">
+                  <span role="cell">Saturday</span
+                  ><strong role="cell">10:30 - 23:00</strong>
+                </div>
+                <div class="hours__row" role="row">
+                  <span role="cell">Sunday</span
+                  ><strong role="cell">10:30 - 22:30</strong>
+                </div>
+                <div class="hours__row" role="row">
+                  <span role="cell">Holiday</span
+                  ><strong role="cell">As announced</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="hours__right">
+              <figure class="media-card media-card--square">
+                <img
+                  src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=70"
+                  alt="Food close-up"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="media-card media-card--square">
+                <img
+                  src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=70"
+                  alt="Toppings close-up"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Banner -->
+      <section class="banner" aria-label="Banner">
+        <div class="container banner__inner">
+          <h2 class="banner__title">Beyond The Boundaries Of Taste</h2>
+          <a class="btn btn--primary" href="#reservation">Make a reservation</a>
+        </div>
+      </section>
+
+      <!-- Contact + Footer -->
+      <section class="contact" id="contact" aria-label="Contact">
+        <div class="container contact__grid">
+          <div class="contact-card">
+            <h3 class="h3 h3--white">Contact Us</h3>
+            <p class="muted muted--white">123 Nguyen Hue, District 1, HCMC</p>
+            <p class="muted muted--white">Hotline: +84 90 000 0000</p>
+            <p class="muted muted--white">Email: hello@yourbrand.com</p>
+          </div>
+
+          <div class="contact-card">
+            <h3 class="h3 h3--white">Book a table</h3>
+            <p class="muted muted--white">
+              Fast confirmation & friendly service.
+            </p>
+            <a class="btn btn--primary" href="#reservation">Reservation</a>
+          </div>
+        </div>
+
+        <div class="container footer">
+          <div class="footer__row">
+            <div class="footer__brand">
+              <img
+                class="brand__logo brand__logo--footer"
+                src="./logo1.png"
+                alt="Your brand logo"
+              />
+              <div>
+                <strong>Your Brand</strong>
+                <div class="footer__small">Japanese Restaurant</div>
+              </div>
+            </div>
+            <div class="footer__small">
+              © <span id="year"></span> Landing Page • Inspired layout demo
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const mobile = document.querySelector(".mobile-nav");
+
+      hamburger?.addEventListener("click", () => {
+        const expanded = hamburger.getAttribute("aria-expanded") === "true";
+        hamburger.setAttribute("aria-expanded", String(!expanded));
+        mobile.hidden = expanded;
+      });
+
+      mobile?.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          hamburger.setAttribute("aria-expanded", "false");
+          mobile.hidden = true;
+        });
+      });
+
+      document
+        .querySelector("#reserveForm")
+        ?.addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert("✅ Reservation request received (demo).");
+        });
+
+      document.querySelector("#year").textContent = String(
+        new Date().getFullYear()
+      );
+    </script>
+  </body>
+</html>
